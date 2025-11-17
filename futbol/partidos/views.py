@@ -4,7 +4,7 @@ from .models import *
 
 def inicio(request):
     # Obtener temporadas
-    temporadas = Temporada.objects.all().order_by('-año')
+    temporadas = Temporada.objects.all().order_by('-anyo')
     return render(request, 'partidos/inicio.html', {'temporadas': temporadas})
 
 def ultima_temporada(request):
